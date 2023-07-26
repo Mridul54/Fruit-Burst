@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
+    <!--Tailwind and DaisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6ac6a20219.js" crossorigin="anonymous"></script>
+
+    <style>
+      .font-lato{
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
 </head>
-<body>
-    
+<body class="font-lato">
+    <header class="md:container md:mx-auto">
+        <nav>
+          <div class="hidden md:flex lg:flex  justify-between items-center bg-[#F85559] rounded-full p-5">
+            <div class="flex md:gap-2  lg:gap-4 ml-4 lg:text-lg md:text-xs text-white">
+              <a href="">Home</a>
+              <a href="">About Us </a>
+              <a href="">Shop</a>
+              <a href="">All fruits</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <img src="./images/logo.png" alt="">
+              <h3 class=" lg:text-4xl md:text-xl text-white">Fruit Burst</h3>
+            </div>
+            <div class="flex-none gap-2 ">
+              <input class="rounded-full p-3 lg:pr-48 md:pr-10" type="search" name="" id="" placeholder="Search here">
+              <i class="text-black fa-solid fa-magnifying-glass relative right-12"></i>
+            </div>
+          </div>
+          <!-- mobile view -->
+          <div class="container mx-auto">
+            <div class=" flex justify-between bg-white items-center m-7">
+              <div class="md:hidden flex items-center gap-3">
+                <img src="./images/logo.png" alt="">
+                <h3 class="text-xl font-bold">Fruit Burst</h3>
+              </div>
+              <!-- <i class="fa-solid fa-bars w-6  md:hidden"></i> -->
+              <div class="dropdown dropdown-bottom dropdown-end md:hidden">
+                <label tabindex="0" class=" m-1"><i class="fa-solid fa-bars w-6  md:hidden"></i></label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home </a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop </a></li>
+                  <li><a>All Fruit</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
